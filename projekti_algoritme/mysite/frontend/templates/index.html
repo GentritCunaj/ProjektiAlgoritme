@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Binary Search</title>
+    <h1>Binary Search</h1>
+
+</head>
+<body>
+
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="array[]" value="" /><br>
+        {% csrf_token %}
+        <input type="text" name="x[]" value="">
+         <button type="submit" name="button">
+            Submit
+        </button>
+
+
+    <p>{{message}}</p>
+    {% for a in arr %}
+         <p>{{a}}</p>
+    {% endfor %}
+
+</body>
+
+</html>
